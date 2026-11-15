@@ -2,3 +2,7 @@
 .openai/
 __pycache__/
 dist/
+node_modules/
+.cloudflare/
+.dev.vars*
+.env*
