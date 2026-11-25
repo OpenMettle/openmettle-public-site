@@ -4,36 +4,44 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f2ebdd">
-  <meta name="description" content="OpenMettle is coming soon. AMD-first, open-source AI for home labs and households, with privacy and practical usability in mind.">
+  <meta name="description" content="OpenMettle is an AMD-first, open-source self-hosted AI platform built in Rust and PostgreSQL 18 — private multi-user AI in active v1 development for homes, with Education and Small Business editions planned.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="OpenMettle — Bring out the best in your AI.">
-  <meta property="og:description" content="A little more local. A little more personal. AMD-first, open-source AI for your home lab. Coming soon.">
+  <meta property="og:description" content="Private, multi-user self-hosted AI built in Rust and PostgreSQL 18. AMD-first serving with Elastic KV Cache, per-user isolation, and planned Home, Education, and Small Business editions.">
   <meta name="twitter:card" content="summary">
-  <title>OpenMettle — Coming soon</title>
+  <title>OpenMettle — Bring out the best in your AI.</title>
   <link rel="icon" type="image/png" href="assets/mettle.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+
   <div class="page">
     <header class="header">
       <a class="brand" href="./" aria-label="OpenMettle home"><span class="brand-mark" aria-hidden="true">m<span></span></span>OpenMettle<span class="brand-dot">.</span></a>
-      <a class="header-link" href="https://github.com/OpenMettle">Follow the build <svg class="arrow" viewBox="0 0 24 24" width="19" height="19" fill="none" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14" stroke="currentColor" stroke-width="1.8"/></svg></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#editions">Editions</a>
+        <a href="#security">Security</a>
+        <a href="#platform">Platform</a>
+        <a href="#stack">Stack</a>
+        <a class="header-link" href="https://github.com/OpenMettle">GitHub <svg class="arrow" viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14" stroke="currentColor" stroke-width="1.9"/></svg></a>
+      </nav>
     </header>
 
     <main id="main">
       <section class="hero" aria-labelledby="title">
         <div class="hero-copy">
-          <p class="status"><span aria-hidden="true"></span> A GOOD THING IN THE MAKING</p>
+          <p class="status"><span aria-hidden="true"></span> ACTIVE V1 BUILD · OPEN SOURCE</p>
           <h1 id="title">Bring out<br>the best in<br><span>your AI.</span></h1>
-          <p class="intro">Big ideas. Home-grown intelligence.<br>We’re building open-source AI for your home lab<br class="desktop-break"> and the people who make it home.</p>
+          <p class="intro">Big ideas. Self-hosted intelligence, built to share safely.<br>Born in a home lab and engineered clean-room in Rust and PostgreSQL 18 —<br class="desktop-break"> private multi-user AI for households today, with Education and Small Business editions on the way.</p>
           <div class="actions">
             <a class="button" href="https://github.com/OpenMettle">
-              <svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.86c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.99 1.03-2.69-.1-.26-.45-1.28.1-2.66 0 0 .84-.27 2.75 1.03A9.6 9.6 0 0 1 12 6.81c.85 0 1.71.12 2.51.34 1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.66.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 22 12c0-5.52-4.48-10-10-10Z"/></svg>
-              Find us on GitHub <svg class="arrow" viewBox="0 0 24 24" width="19" height="19" fill="none" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14" stroke="currentColor" stroke-width="1.8"/></svg>
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.86c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.99 1.03-2.69-.1-.26-.45-1.28.1-2.66 0 0 .84-.27 2.75 1.03A9.6 9.6 0 0 1 12 6.81c.85 0 1.71.12 2.51.34 1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.66.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 22 12c0-5.52-4.48-10-10-10Z"/></svg>
+              Follow on GitHub <svg class="arrow" viewBox="0 0 24 24" width="17" height="17" fill="none" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14" stroke="currentColor" stroke-width="1.8"/></svg>
             </a>
-            <span class="coming-soon">Coming soon<span aria-hidden="true">_</span></span>
+            <a class="button-secondary" href="https://github.com/OpenMettle/openmettle-core/blob/main/ARCHITECTURE-v1.md">Read architecture v1</a>
           </div>
+          <p class="hero-note">Active v1 development — no general installer or stable release yet<span aria-hidden="true">_</span></p>
         </div>
 
         <figure class="mettle">
@@ -45,14 +53,255 @@
         </figure>
       </section>
 
-      <section class="principles" aria-label="What we’re building towards">
-        <div><span class="principle-number">01 /</span><p><strong>AMD-first.</strong><span>Tuned for the hardware we love.</span></p></div>
-        <div><span class="principle-number">02 /</span><p><strong>Open by design.</strong><span>Built to tinker. Made to share.</span></p></div>
-        <div><span class="principle-number">03 /</span><p><strong>Privacy in mind.</strong><span>Your home. Your hardware. Your choices.</span></p></div>
+      <section class="principles" aria-label="Core design principles">
+        <div><span class="principle-number">01 /</span><p><strong>AMD-first. Hardware-flexible.</strong><span>Curated ROCm and RDNA4 serving paired with a GPU-independent Rust core, planned NVIDIA profiles, and external backends.</span></p></div>
+        <div><span class="principle-number">02 /</span><p><strong>Private by default.</strong><span>Shared hardware never means shared chat history, cross-user KV caches, or implicit administrator access.</span></p></div>
+        <div><span class="principle-number">03 /</span><p><strong>Open and inspectable.</strong><span>Clean-room Rust, PostgreSQL 18, and 44 public architecture decision records — zero trackers, zero hidden defaults.</span></p></div>
+      </section>
+
+      <section id="editions" class="section" aria-labelledby="editions-heading">
+        <div class="section-head">
+          <p class="eyebrow"><span aria-hidden="true"></span> 01 / EDITIONS &amp; DIRECTION</p>
+          <h2 id="editions-heading">One core platform. Three environments.</h2>
+          <p class="section-lead">OpenMettle starts with an open-source core built for home labs and households, laying the multi-user isolation, policy, and governance foundation for planned Education and Small Business offerings.</p>
+        </div>
+
+        <div class="editions-grid">
+          <article class="edition-card edition-active">
+            <div class="card-meta">
+              <span class="badge badge-active">Open Source · Active Build</span>
+              <span class="card-index" aria-hidden="true">E-01</span>
+            </div>
+            <h3>Home &amp; Household</h3>
+            <p class="card-sub">Private, approachable AI for home labs and the families who share them.</p>
+            <ul class="feature-list">
+              <li>Shared local hardware without shared chat history or private files</li>
+              <li>One-time home invitation codes and automatic family onboarding</li>
+              <li>Built-in quiet-hour and study-hour schedules with model allowlists</li>
+              <li>Full local control over models, tools, and optional external providers</li>
+            </ul>
+          </article>
+
+          <article class="edition-card">
+            <div class="card-meta">
+              <span class="badge badge-planned">Planned Offering</span>
+              <span class="card-index" aria-hidden="true">E-02</span>
+            </div>
+            <h3>Education</h3>
+            <p class="card-sub">Tailored for schools, labs, and universities running local or private AI.</p>
+            <ul class="feature-list">
+              <li>Curriculum-aligned study hours, preset guidance, and model allowlists</li>
+              <li>OIDC/SSO directory group sync with fail-closed policy enforcement</li>
+              <li>Strict per-student workspace, conversation, and artifact isolation</li>
+              <li>Institutional data residency on campus or private infrastructure</li>
+            </ul>
+          </article>
+
+          <article class="edition-card">
+            <div class="card-meta">
+              <span class="badge badge-planned">Planned Offering</span>
+              <span class="card-index" aria-hidden="true">E-03</span>
+            </div>
+            <h3>Small Business &amp; Commercial</h3>
+            <p class="card-sub">Private multi-user AI for teams keeping proprietary work in-house.</p>
+            <ul class="feature-list">
+              <li>Locked-down personal and project workspaces with revocable shares</li>
+              <li>Human-in-the-loop tool approvals bound to arguments and destinations</li>
+              <li>Transactional token, cost, storage, and GPU quota governance</li>
+              <li>Retention policies, audit trails, and zero proprietary data sent to public AI clouds by default</li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="disclaimer">Home &amp; Household reflects the open-source v1 core currently under active development. Education and Small Business are planned offerings building on the same architecture; no release dates or formal third-party compliance certifications are claimed.</p>
+      </section>
+
+      <section id="security" class="section security-band" aria-labelledby="security-heading">
+        <div class="section-head">
+          <p class="eyebrow"><span aria-hidden="true"></span> 02 / SECURITY, PRIVACY &amp; GOVERNANCE</p>
+          <h2 id="security-heading">Shared hardware shouldn’t mean shared secrets.</h2>
+          <p class="section-lead">Running a model locally is only half the story. OpenMettle engineers multi-user isolation across the database, the identity boundary, the run queue, and the inference proxy itself.</p>
+        </div>
+
+        <div class="security-grid">
+          <article class="security-card">
+            <div class="card-meta">
+              <span class="sec-index">S-01</span>
+              <span class="adr-tag">ADR 0027 · ADR 0044</span>
+            </div>
+            <h3>Per-User Chat Lockdown &amp; Prefix-Cache Isolation</h3>
+            <p>Every conversation, artifact, and memory record is private to its creator by default — even inside shared projects, and even account administrators gain no implicit access to another person’s unshared items. Explicit sharing uses revocable grants, returning <code>404</code> concealment for unshared or out-of-scope targets.</p>
+            <p>At dispatch, OpenMettle’s own inference proxy rejects caller-supplied SGLang routing keys (<code>cache_salt</code>, <code>extra_key</code>, <code>session_id</code>, <code>rid</code>, <code>lora_path</code>) and injects a scoped cryptographic <code>cache_salt</code> so upstream KV prefix caches do not bleed across users or private chats on qualified backends.</p>
+          </article>
+
+          <article class="security-card">
+            <div class="card-meta">
+              <span class="sec-index">S-02</span>
+              <span class="adr-tag">ADR 0044 · MIGRATION 35</span>
+            </div>
+            <h3>Four-Point Family &amp; Study Protection Rules</h3>
+            <p>IANA timezone- and DST-accurate quiet hours, study-hour model allowlists, and per-user or group model switches are evaluated by one authoritative PostgreSQL policy function, with optional user-level schedule overrides.</p>
+            <p>Rules are enforced independently at four checkpoints — API admission and preview, worker claim and step recheck, database round handoff, and proxy dispatch — failing closed whenever OIDC group evidence is stale, revoked, or missing.</p>
+          </article>
+
+          <article class="security-card">
+            <div class="card-meta">
+              <span class="sec-index">S-03</span>
+              <span class="adr-tag">ADR 0003 · 0022 · 0030 · 0044</span>
+            </div>
+            <h3>Least-Privilege Database &amp; Identity Isolation</h3>
+            <p>Clean-room Rust services run over PostgreSQL 18 using four disjoint, non-DDL, non-<code>DELETE</code> runtime roles — <code>openmettle_api</code>, dedicated session-issuing <code>openmettle_issuance</code>, <code>openmettle_worker</code>, and <code>openmettle_gateway</code> for dispatch and usage settlement — checked automatically on every migration.</p>
+            <p>OIDC/SSO login uses local operator identity approval gates and one-time home invitation codes, while every inference round carries a single-use 32-byte bearer whose plaintext never touches the database (only its SHA-256 digest is stored and checked).</p>
+          </article>
+
+          <article class="security-card">
+            <div class="card-meta">
+              <span class="sec-index">S-04</span>
+              <span class="adr-tag">ADR 0035 · 0040 · 0041 · 0024</span>
+            </div>
+            <h3>Tool Approvals, Quotas &amp; Verifiable Auditability</h3>
+            <p>Human-in-the-loop tool approvals are cryptographically bound (SHA-256) to canonical arguments, tool version, exact destination, and live policy revisions; opt-in YOLO mode stays strictly policy-gated and cannot bypass immutable human confirmation classes.</p>
+            <p>Exact-integer transactional quotas govern tokens, cost micro-units, storage bytes, and device slots. Soft-delete grace periods, operator retention holds, an append-only SHA-256 hash-chained deletion journal with a fail-closed restore barrier, and value-free, PII-free structured telemetry (export off by default) complete the governance model.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="platform" class="section" aria-labelledby="platform-heading">
+        <div class="section-head">
+          <p class="eyebrow"><span aria-hidden="true"></span> 03 / SERVING &amp; PLATFORM ENGINEERING</p>
+          <h2 id="platform-heading">Cutting-edge inference meets dependable execution.</h2>
+          <p class="section-lead">Fast local GPUs shouldn’t come at the cost of fragile chats or stranded VRAM. OpenMettle pairs AMD-first ROCm serving research with durable, server-owned run orchestration.</p>
+        </div>
+
+        <article class="serving-feature">
+          <div class="serving-copy">
+            <p class="spec-label">AMD-FIRST ROCm &amp; RDNA4 · ADR 0042</p>
+            <h3>Demand-Driven Elastic KV Cache &amp; Curated SGLang Serving</h3>
+            <p>Our curated SGLang serving stack (<code>OpenMettle/sglang</code>, <code>openmettle-serving</code>) combines HIP virtual-memory <strong>Elastic KV Cache</strong>, FP8 attention caching, MXFP4 quantization, and speculative decoding research tuned for AMD GPUs first.</p>
+            <p>Active chats stay protected inside a physically backed base while spare VRAM is lent to a dynamically mapped prefix-cache tail. When image, video, or accelerated tool workloads arrive, a fenced PostgreSQL capacity controller requests a safe shrink and waits for confirmed multi-rank VRAM release before granting the GPU.</p>
+            <p class="serving-footnote"><strong>GPU-independent core:</strong> <code>openmettle-core</code> runs on CPU alone, integrates optional GPU packages through Kubernetes DRA, plans qualified NVIDIA profiles, and connects cleanly to user-configured external OpenAI-compatible backends.</p>
+          </div>
+
+          <aside class="diagram" aria-label="Logical Elastic KV Cache and GPU capacity coordination model">
+            <p class="diagram-title">LOGICAL VRAM COORDINATION · PER-RANK BUDGETED</p>
+            <div class="diagram-stack">
+              <div class="diagram-node node-base">
+                <span class="node-tag">PROTECTED FLOOR</span>
+                <strong>Active Chat KV Base</strong>
+                <span>Physically backed; active sessions stay bounded inside the guaranteed base.</span>
+              </div>
+              <div class="diagram-node node-tail">
+                <span class="node-tag">ELASTIC HIP VIRTUAL MEMORY</span>
+                <strong>Reclaimable KV Prefix Tail</strong>
+                <span>Borrows spare VRAM for deep prefix reuse; shrinks and confirms release on demand.</span>
+              </div>
+              <div class="diagram-connector" aria-hidden="true"><span>FENCED POSTGRESQL CAPACITY GRANTS · ADR 0042</span></div>
+              <div class="diagram-row">
+                <div class="diagram-node node-compact">
+                  <span class="node-tag">OWNERSHIP</span>
+                  <strong>GPU Controller</strong>
+                  <span>Serialized leases, per-rank fit checks, restart reconciliation.</span>
+                </div>
+                <div class="diagram-node node-compact">
+                  <span class="node-tag">BURST WORKLOADS</span>
+                  <strong>Media &amp; Tools</strong>
+                  <span>Image, video, and accelerated jobs admitted only after confirmed release.</span>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </article>
+
+        <div class="platform-grid">
+          <article class="platform-card">
+            <span class="adr-tag-light">ADR 0032 · 0033 · 0034</span>
+            <h3>Durable Leased Runs &amp; Replayable SSE</h3>
+            <p>PostgreSQL backs a fair <code>SKIP LOCKED</code> work queue with fenced worker leases, execution deadlines, and crash recovery that never blindly replays uncertain side effects. Runs survive browser or mobile disconnects and resume from any API replica via HMAC-signed SSE event cursors.</p>
+          </article>
+
+          <article class="platform-card">
+            <span class="adr-tag-light">ADR 0036</span>
+            <h3>Non-Destructive Branch Graphs</h3>
+            <p>Conversations are stored as parent-linked immutable message graphs. Editing a prompt or retrying a reply forks a new branch without erasing history, paired with layered model-and-preset configuration and explicit, honest context budgets.</p>
+          </article>
+
+          <article class="platform-card">
+            <span class="adr-tag-light">WEB · MOBILE · CLUSTER · IDE</span>
+            <h3>Coherent Delivery Across Interfaces</h3>
+            <p>Backend APIs and OpenAPI 3.2 contracts lead step 1 ahead of the Flutter web and mobile client in step 2 (<code>openmettle-app</code>). Generic Kubernetes/Helm packaging with deny-all NetworkPolicies lives in <code>openmettle-deploy</code>, alongside our local IDE and CLI coding agent (<code>openmettle-acp</code>).</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="stack" class="section" aria-labelledby="stack-heading">
+        <div class="section-head">
+          <p class="eyebrow"><span aria-hidden="true"></span> 04 / REPOSITORIES &amp; BUILD STATUS</p>
+          <h2 id="stack-heading">Built in the open. Honest about what’s ready.</h2>
+          <p class="section-lead">OpenMettle v1 is a clean-room implementation under active development. Backend APIs, migrations, security boundaries, and serving work are moving fast — while a general installer, packaged gateway chart, live multi-user qualification, and the Flutter UI remain in progress.</p>
+        </div>
+
+        <div class="repo-grid">
+          <a class="repo-card" href="https://github.com/OpenMettle/openmettle-core">
+            <div class="card-meta">
+              <span class="repo-name">openmettle-core</span>
+              <span class="repo-status">Active v1 build</span>
+            </div>
+            <p>Rust API, run worker, PostgreSQL 18 migrator, inference proxy, OpenAPI 3.2 contracts, and ADRs 0001–0044.</p>
+          </a>
+
+          <a class="repo-card" href="https://github.com/OpenMettle/openmettle-deploy">
+            <div class="card-meta">
+              <span class="repo-name">openmettle-deploy</span>
+              <span class="repo-status">Core chart &amp; kind tests</span>
+            </div>
+            <p>Generic Kubernetes/Helm packaging, deny-all NetworkPolicies, optional GPU profile boundaries, and recovery docs.</p>
+          </a>
+
+          <a class="repo-card" href="https://github.com/OpenMettle/openmettle-serving">
+            <div class="card-meta">
+              <span class="repo-name">openmettle-serving</span>
+              <span class="repo-status">Serving profiles &amp; tools</span>
+            </div>
+            <p>Model-independent serving profiles, GPU kernel check tools, research records, and qualification harnesses.</p>
+          </a>
+
+          <a class="repo-card" href="https://github.com/OpenMettle/sglang">
+            <div class="card-meta">
+              <span class="repo-name">OpenMettle/sglang</span>
+              <span class="repo-status">openmettle/rdna4 branch</span>
+            </div>
+            <p>Maintained SGLang fork carrying AMD ROCm/RDNA4 fixes, FP8 attention caching, and HIP Elastic KV Cache work.</p>
+          </a>
+
+          <a class="repo-card" href="https://github.com/OpenMettle/openmettle-app">
+            <div class="card-meta">
+              <span class="repo-name">openmettle-app</span>
+              <span class="repo-status">Step 2 · Bootstrap</span>
+            </div>
+            <p>Flutter web and mobile presentation layer consuming the core v1 APIs and replayable event streams.</p>
+          </a>
+
+          <a class="repo-card" href="https://github.com/OpenMettle/openmettle-acp">
+            <div class="card-meta">
+              <span class="repo-name">openmettle-acp</span>
+              <span class="repo-status">v0.7.0 · v1 adapter planned</span>
+            </div>
+            <p>Independent local coding agent for JetBrains IDEs and compatible ACP clients with sandboxed commands and checkpoints.</p>
+          </a>
+        </div>
       </section>
     </main>
 
-    <footer class="footer"><p>© 2026 OpenMettle <span aria-hidden="true">/</span> An independent open-source project.</p><p>Built at home. For life at home.</p></footer>
+    <footer class="footer">
+      <p>© 2026 OpenMettle <span aria-hidden="true">/</span> Independent open-source project.</p>
+      <div class="footer-links">
+        <a href="https://github.com/OpenMettle/.github/blob/main/docs/PROJECT-BRIEF.md">Project brief</a>
+        <a href="https://github.com/OpenMettle/openmettle-core/blob/main/DECISIONS.md">ADRs</a>
+        <a href="https://github.com/OpenMettle/.github/blob/main/SECURITY.md">Security</a>
+        <a href="https://github.com/OpenMettle">GitHub</a>
+      </div>
+      <p>Zero JS. Zero trackers. Built to self-host.</p>
+    </footer>
   </div>
 </body>
 </html>

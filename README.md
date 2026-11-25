@@ -1,6 +1,8 @@
 # OpenMettle public site
 
-A responsive coming-soon page for OpenMettle. The published page is plain HTML and CSS with no JavaScript, analytics, third-party fonts, or form submissions.
+The responsive static homepage for OpenMettle. The published site is plain HTML and CSS with zero JavaScript, analytics, third-party fonts, or form submissions.
+
+The homepage introduces OpenMettle's clean-room v1 platform direction — covering the open-source Home & Household core in active development alongside planned Education and Small Business offerings, multi-user security and governance architecture, AMD-first ROCm/RDNA4 serving with Elastic KV Cache, and the public repository map.
 
 ## Local preview
 
@@ -54,6 +56,6 @@ GitHub Pages can still serve the source from the default branch at `/ (root)` wi
 
 `assets/mettle.png` is an unchanged copy of `current/openmettle-avatar-transparent.png` from [OpenMettle/.github's brand collection](https://github.com/OpenMettle/.github/tree/main/assets/brand). Original Git blob: `ebc19c9d0274d7c06653a7eb59aa79164605f73f`.
 
-The site follows the graphite, warm ivory and vermilion identity. The text accent is darkened for readable contrast on ivory. The keyhole in Mettle's red tab represents the privacy focus; the copy describes a project in development.
+The site follows the graphite (`#24272c`), deep charcoal (`#191c21`), warm ivory (`#f2ebdd`), and vermilion (`#bd332a` for WCAG AA text on ivory, `#e7473c` for accents) identity. The keyhole in Mettle's red tab represents the privacy focus; copy distinguishes the active v1 open-source build from planned Education and Small Business offerings and avoids claiming unverified benchmarks or formal compliance certifications.
 
-Update the copy in `index.html` and layout in `styles.css`. Source resource paths remain relative for direct-file previews and static hosting at a project path.
+Update page copy in `index.html` and layout in `styles.css`. Keep resource paths relative (`assets/mettle.png`, `styles.css`) for direct-file previews and static hosting at any path, and keep the site free of JavaScript and external runtime requests.
