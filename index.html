@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f2ebdd">
-  <meta name="description" content="OpenMettle is an AMD-first, open-source self-hosted AI platform built in Rust and PostgreSQL 18 — private multi-user AI in active v1 development for homes, with Education and Small Business editions planned.">
+  <meta name="description" content="OpenMettle is an AMD-first, open-source self-hosted AI platform built in Rust and PostgreSQL 18: private multi-user AI in active v1 development for homes, with Education and Small Business editions planned.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="OpenMettle — Bring out the best in your AI.">
-  <meta property="og:description" content="Private, multi-user self-hosted AI built in Rust and PostgreSQL 18. AMD-first serving with Elastic KV Cache, per-user isolation, and planned Home, Education, and Small Business editions.">
+  <meta property="og:title" content="OpenMettle: Bring out the best in your AI.">
+  <meta property="og:description" content="Private, multi-user self-hosted AI built in Rust and PostgreSQL 18. AMD-first serving with Elastic KV Cache, four-point governance, scoped MCP tools, and planned Home, Education, and Small Business editions.">
   <meta name="twitter:card" content="summary">
-  <title>OpenMettle — Bring out the best in your AI.</title>
+  <title>OpenMettle: Bring out the best in your AI.</title>
   <link rel="icon" type="image/png" href="assets/mettle.png">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -21,6 +21,7 @@
       <a class="brand" href="./" aria-label="OpenMettle home"><span class="brand-mark" aria-hidden="true">m<span></span></span>OpenMettle<span class="brand-dot">.</span></a>
       <nav class="nav" aria-label="Primary">
         <a href="#editions">Editions</a>
+        <a href="#architecture">Architecture</a>
         <a href="#security">Security</a>
         <a href="#platform">Platform</a>
         <a href="#stack">Stack</a>
@@ -33,15 +34,15 @@
         <div class="hero-copy">
           <p class="status"><span aria-hidden="true"></span> ACTIVE V1 BUILD · OPEN SOURCE</p>
           <h1 id="title">Bring out<br>the best in<br><span>your AI.</span></h1>
-          <p class="intro">Big ideas. Self-hosted intelligence, built to share safely.<br>Born in a home lab and engineered clean-room in Rust and PostgreSQL 18 —<br class="desktop-break"> private multi-user AI for households today, with Education and Small Business editions on the way.</p>
+          <p class="intro">Big ideas. Self-hosted intelligence, built to share safely.<br>Born in a home lab in Rust and PostgreSQL 18: private multi-user AI for households today, with Education and Small Business editions on the way.</p>
           <div class="actions">
             <a class="button" href="https://github.com/OpenMettle">
               <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.86c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.99 1.03-2.69-.1-.26-.45-1.28.1-2.66 0 0 .84-.27 2.75 1.03A9.6 9.6 0 0 1 12 6.81c.85 0 1.71.12 2.51.34 1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.66.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 22 12c0-5.52-4.48-10-10-10Z"/></svg>
               Follow on GitHub <svg class="arrow" viewBox="0 0 24 24" width="17" height="17" fill="none" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14" stroke="currentColor" stroke-width="1.8"/></svg>
             </a>
-            <a class="button-secondary" href="https://github.com/OpenMettle/openmettle-core/blob/main/ARCHITECTURE-v1.md">Read architecture v1</a>
+            <a class="button-secondary" href="#architecture">Explore architecture</a>
           </div>
-          <p class="hero-note">Active v1 development — no general installer or stable release yet<span aria-hidden="true">_</span></p>
+          <p class="hero-note">Active v1 development: no general installer or stable release yet<span aria-hidden="true">_</span></p>
         </div>
 
         <figure class="mettle">
@@ -54,16 +55,16 @@
       </section>
 
       <section class="principles" aria-label="Core design principles">
-        <div><span class="principle-number">01 /</span><p><strong>AMD-first. Hardware-flexible.</strong><span>Curated ROCm and RDNA4 serving paired with a GPU-independent Rust core, planned NVIDIA profiles, and external backends.</span></p></div>
+        <div><span class="principle-number">01 /</span><p><strong>AMD-first. Hardware-flexible.</strong><span>Curated ROCm and RDNA4 serving paired with a CPU-capable Rust core, planned NVIDIA profiles, and optional external backends.</span></p></div>
         <div><span class="principle-number">02 /</span><p><strong>Private by default.</strong><span>Shared hardware never means shared chat history, cross-user KV caches, or implicit administrator access.</span></p></div>
-        <div><span class="principle-number">03 /</span><p><strong>Open and inspectable.</strong><span>Clean-room Rust, PostgreSQL 18, and 44 public architecture decision records — zero trackers, zero hidden defaults.</span></p></div>
+        <div><span class="principle-number">03 /</span><p><strong>Open and inspectable.</strong><span>Clean-room Rust, PostgreSQL 18, and 44 public architecture decision records: zero trackers, zero hidden defaults.</span></p></div>
       </section>
 
       <section id="editions" class="section" aria-labelledby="editions-heading">
         <div class="section-head">
           <p class="eyebrow"><span aria-hidden="true"></span> 01 / EDITIONS &amp; DIRECTION</p>
           <h2 id="editions-heading">One core platform. Three environments.</h2>
-          <p class="section-lead">OpenMettle starts with an open-source core built for home labs and households, laying the multi-user isolation, policy, and governance foundation for planned Education and Small Business offerings.</p>
+          <p class="section-lead">OpenMettle starts with an open-source core engineered for home labs and households, establishing the multi-user isolation, quota, and governance foundation for planned Education and Small Business offerings.</p>
         </div>
 
         <div class="editions-grid">
@@ -73,12 +74,12 @@
               <span class="card-index" aria-hidden="true">E-01</span>
             </div>
             <h3>Home &amp; Household</h3>
-            <p class="card-sub">Private, approachable AI for home labs and the families who share them.</p>
+            <p class="card-sub">Private, dependable AI for home labs and the families who share them.</p>
             <ul class="feature-list">
-              <li>Shared local hardware without shared chat history or private files</li>
-              <li>One-time home invitation codes and automatic family onboarding</li>
-              <li>Built-in quiet-hour and study-hour schedules with model allowlists</li>
-              <li>Full local control over models, tools, and optional external providers</li>
+              <li>Shared local hardware without shared chat history, memory, or private files</li>
+              <li>One-time home invitation codes with local operator approval gates</li>
+              <li>DST-accurate quiet hours, study-hour allowlists, and per-model switches</li>
+              <li>Full control over local GPUs, reviewed MCP tools, and optional external providers</li>
             </ul>
           </article>
 
@@ -88,12 +89,12 @@
               <span class="card-index" aria-hidden="true">E-02</span>
             </div>
             <h3>Education</h3>
-            <p class="card-sub">Tailored for schools, labs, and universities running local or private AI.</p>
+            <p class="card-sub">Built for schools, labs, and universities running local or private AI.</p>
             <ul class="feature-list">
               <li>Curriculum-aligned study hours, preset guidance, and model allowlists</li>
               <li>OIDC/SSO directory group sync with fail-closed policy enforcement</li>
               <li>Strict per-student workspace, conversation, and artifact isolation</li>
-              <li>Institutional data residency on campus or private infrastructure</li>
+              <li>Planned post-v1 teacher-controlled lesson policies and institutional data residency</li>
             </ul>
           </article>
 
@@ -105,10 +106,10 @@
             <h3>Small Business &amp; Commercial</h3>
             <p class="card-sub">Private multi-user AI for teams keeping proprietary work in-house.</p>
             <ul class="feature-list">
-              <li>Locked-down personal and project workspaces with revocable shares</li>
-              <li>Human-in-the-loop tool approvals bound to arguments and destinations</li>
-              <li>Transactional token, cost, storage, and GPU quota governance</li>
-              <li>Retention policies, audit trails, and zero proprietary data sent to public AI clouds by default</li>
+              <li>Private personal and project workspaces with explicit, revocable grants</li>
+              <li>SHA-256-bound human tool approvals pinned to arguments and destinations</li>
+              <li>Exact-integer transactional token, micro-cost, storage, and GPU quota governance</li>
+              <li>Retention holds, hash-chained deletion journals, and zero public-cloud leak by default</li>
             </ul>
           </article>
         </div>
@@ -116,12 +117,357 @@
         <p class="disclaimer">Home &amp; Household reflects the open-source v1 core currently under active development. Education and Small Business are planned offerings building on the same architecture; no release dates or formal third-party compliance certifications are claimed.</p>
       </section>
 
+      <section id="architecture" class="section" aria-labelledby="architecture-heading">
+        <div class="section-head">
+          <p class="eyebrow"><span aria-hidden="true"></span> 02 / PLATFORM ARCHITECTURE</p>
+          <h2 id="architecture-heading">Five clear planes. Zero hidden trust boundaries.</h2>
+          <p class="section-lead">Every component owns one narrow responsibility: clients stay untrusted presentation layers, PostgreSQL 18 and descriptor-pinned storage hold authoritative state, workers execute leased turns and two-phase tools, and OpenMettle’s own per-model proxy isolates and meters inference.</p>
+        </div>
+
+        <figure class="blueprint-frame">
+          <div class="blueprint-bar">
+            <span class="blueprint-fig">FIG 01 · END-TO-END PLATFORM TOPOLOGY</span>
+            <span class="blueprint-legend">
+              <span><i class="swatch swatch-solid" aria-hidden="true"></i> Core v1 boundary</span>
+              <span><i class="swatch swatch-red" aria-hidden="true"></i> Security / fence gate</span>
+              <span><i class="swatch swatch-dashed" aria-hidden="true"></i> Optional / Stage 2 to 3</span>
+            </span>
+          </div>
+
+          <svg class="arch-svg" viewBox="0 0 1120 806" width="1120" height="806" role="img" aria-labelledby="arch-svg-title arch-svg-desc">
+            <title id="arch-svg-title">OpenMettle end-to-end platform architecture across five planes</title>
+            <desc id="arch-svg-desc">Layered blueprint showing Client Surfaces (Flutter openmettle-app, IDE and CLI openmettle-acp, replayable HMAC SSE), Control and Identity Boundary (openmettle-api and dedicated openmettle_issuance session issuer), Authoritative State and Storage Plane (PostgreSQL 18 with four disjoint runtime roles and descriptor-pinned artifact_fs volume), Fenced Execution and Scoped Tools (openmettle-worker leased turn runner, two-phase effect ledger and approvals, stateless MCP 2026-07-28 adapter), and the Inference and GPU Plane (openmettle-gateway proxy with scoped cache_salt, curated AMD ROCm and RDNA4 SGLang with Elastic KV, fenced ADR 0042 GPU controller and burst media workloads, and optional encrypted external backends).</desc>
+            <defs>
+              <pattern id="arch-grid" width="28" height="28" patternUnits="userSpaceOnUse">
+                <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#e4dccb" stroke-width="0.8"/>
+              </pattern>
+              <marker id="arch-arrow-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+                <path d="M 0 1 L 9 5 L 0 9 z" fill="#24272c"/>
+              </marker>
+              <marker id="arch-arrow-red" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+                <path d="M 0 1 L 9 5 L 0 9 z" fill="#bd332a"/>
+              </marker>
+              <marker id="arch-arrow-bright" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+                <path d="M 0 1 L 9 5 L 0 9 z" fill="#e7473c"/>
+              </marker>
+            </defs>
+
+            <rect x="0" y="0" width="1120" height="806" fill="#f8f4ea"/>
+            <rect x="0" y="0" width="1120" height="806" fill="url(#arch-grid)"/>
+
+            <!-- PLANE 01: CLIENT SURFACES -->
+            <g>
+              <rect x="24" y="20" width="1072" height="110" rx="5" fill="#f2ebdd" stroke="#b9b0a0" stroke-width="1.2" stroke-dasharray="5 4"/>
+              <text x="42" y="41" font-family="'Courier New', monospace" font-size="11" font-weight="700" letter-spacing="1.2" fill="#54524a">01 / CLIENT SURFACES · UNTRUSTED PRESENTATION LAYER</text>
+
+              <rect x="42" y="54" width="328" height="62" rx="4" fill="#f8f4ea" stroke="#24272c" stroke-width="1.2" stroke-dasharray="5 3"/>
+              <text x="58" y="76" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="900" fill="#24272c">Web &amp; Mobile App (openmettle-app)</text>
+              <text x="58" y="95" font-family="Arial, Helvetica, sans-serif" font-size="11.5" fill="#54524a">Step 2 Flutter client · Local drafts &amp; branch UI</text>
+              <text x="58" y="109" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#bd332a">V1-33 TO V1-35 · NO DIRECT SECRETS</text>
+
+              <rect x="396" y="54" width="328" height="62" rx="4" fill="#f8f4ea" stroke="#24272c" stroke-width="1.2"/>
+              <text x="412" y="76" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="900" fill="#24272c">IDE &amp; CLI Agent (openmettle-acp)</text>
+              <text x="412" y="95" font-family="Arial, Helvetica, sans-serif" font-size="11.5" fill="#54524a">JetBrains &amp; ACP clients · Local OS sandbox</text>
+              <text x="412" y="109" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#bd332a">V0.7.0 · V1-09 ADAPTER PLANNED</text>
+
+              <rect x="750" y="54" width="328" height="62" rx="4" fill="#f8f4ea" stroke="#bd332a" stroke-width="1.3"/>
+              <text x="766" y="76" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="900" fill="#24272c">Replayable HMAC SSE Streams</text>
+              <text x="766" y="95" font-family="Arial, Helvetica, sans-serif" font-size="11.5" fill="#54524a">Monotonic per-run cursors survive disconnects</text>
+              <text x="766" y="109" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#bd332a">ADR 0034 · ANY API REPLICA</text>
+            </g>
+
+            <!-- Connectors 01 -> 02 -->
+            <g>
+              <line x1="280" y1="130" x2="280" y2="168" stroke="#24272c" stroke-width="1.6" marker-end="url(#arch-arrow-ink)"/>
+              <rect x="128" y="138" width="304" height="20" rx="3" fill="#f8f4ea" stroke="#c9c2b5" stroke-width="1"/>
+              <text x="280" y="152" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#24272c">HTTPS /v1 OpenAPI 3.2 · Idempotency-Key</text>
+
+              <line x1="840" y1="168" x2="840" y2="130" stroke="#bd332a" stroke-width="1.6" marker-end="url(#arch-arrow-red)"/>
+              <rect x="698" y="138" width="284" height="20" rx="3" fill="#f8f4ea" stroke="#bd332a" stroke-width="1"/>
+              <text x="840" y="152" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#bd332a">OIDC PKCE / Signed SSE Cursor Replay</text>
+            </g>
+
+            <!-- PLANE 02: CONTROL & IDENTITY BOUNDARY -->
+            <g>
+              <rect x="24" y="170" width="1072" height="112" rx="5" fill="#f2ebdd" stroke="#24272c" stroke-width="1.5"/>
+              <rect x="24" y="170" width="1072" height="4" rx="2" fill="#bd332a"/>
+              <text x="42" y="193" font-family="'Courier New', monospace" font-size="11" font-weight="700" letter-spacing="1.2" fill="#24272c">02 / CONTROL &amp; IDENTITY BOUNDARY · OPENMETTLE-CORE</text>
+
+              <rect x="42" y="206" width="524" height="62" rx="4" fill="#f8f4ea" stroke="#24272c" stroke-width="1.2"/>
+              <text x="58" y="227" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="900" fill="#24272c">HTTP API (openmettle-api · role: openmettle_api)</text>
+              <text x="58" y="245" font-family="Arial, Helvetica, sans-serif" font-size="11.5" fill="#54524a">Primary authz &amp; 404 concealment · Branch graphs · Pre-round quota holds</text>
+              <text x="58" y="260" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#bd332a">CHECKPOINT 01 · ZERO SESSION ISSUANCE OR WORKER WRITES</text>
+
+              <rect x="586" y="206" width="492" height="62" rx="4" fill="#f8f4ea" stroke="#bd332a" stroke-width="1.4"/>
+              <rect x="586" y="206" width="5" height="62" rx="2" fill="#bd332a"/>
+              <text x="604" y="227" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="900" fill="#24272c">Session Issuance (role: openmettle_issuance)</text>
+              <text x="604" y="245" font-family="Arial, Helvetica, sans-serif" font-size="11.5" fill="#54524a">OIDC/Keycloak PKCE · Operator approval gates · One-time home invite codes</text>
+              <text x="604" y="260" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#bd332a">ADR 0022 · ADR 0030 · DISJOINT POOL &amp; OPAQUE SESSIONS</text>
+            </g>
+
+            <!-- Connectors 02 -> 03 -->
+            <g>
+              <line x1="250" y1="282" x2="250" y2="320" stroke="#24272c" stroke-width="1.6" marker-start="url(#arch-arrow-ink)" marker-end="url(#arch-arrow-ink)"/>
+              <rect x="116" y="290" width="268" height="20" rx="3" fill="#f8f4ea" stroke="#c9c2b5" stroke-width="1"/>
+              <text x="250" y="304" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#24272c">Admission, Grants, Quotas &amp; Runs</text>
+
+              <line x1="620" y1="282" x2="620" y2="320" stroke="#bd332a" stroke-width="1.6" marker-end="url(#arch-arrow-red)"/>
+              <rect x="518" y="290" width="204" height="20" rx="3" fill="#f8f4ea" stroke="#bd332a" stroke-width="1"/>
+              <text x="620" y="304" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#bd332a">Session Issuance Pool Only</text>
+
+              <line x1="922" y1="282" x2="922" y2="320" stroke="#24272c" stroke-width="1.6" marker-start="url(#arch-arrow-ink)" marker-end="url(#arch-arrow-ink)"/>
+              <rect x="780" y="290" width="284" height="20" rx="3" fill="#f8f4ea" stroke="#c9c2b5" stroke-width="1"/>
+              <text x="922" y="304" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#24272c">Multipart Stage &amp; LOCK_SH Downloads</text>
+            </g>
+
+            <!-- PLANE 03: AUTHORITATIVE STATE & STORAGE PLANE (DARK CHARCOAL CORE) -->
+            <g>
+              <rect x="24" y="322" width="1072" height="148" rx="6" fill="#191c21" stroke="#191c21" stroke-width="1.5"/>
+              <text x="42" y="346" font-family="'Courier New', monospace" font-size="11" font-weight="700" letter-spacing="1.2" fill="#f26b61">03 / AUTHORITATIVE STATE &amp; STORAGE PLANE · SINGLE SOURCE OF TRUTH</text>
+
+              <rect x="42" y="358" width="698" height="96" rx="4" fill="#21252b" stroke="#3b414c" stroke-width="1.2"/>
+              <text x="58" y="380" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="900" fill="#f2ebdd">PostgreSQL 18 (Authoritative Ledger, Policy &amp; Fair Queue)</text>
+              <text x="58" y="399" font-family="Arial, Helvetica, sans-serif" font-size="11.5" fill="#c4beb2">SKIP LOCKED queue · Immutable branch graphs · Exact-integer quotas · 4-pt family rules · Hash-chained deletion_journal</text>
+
+              <!-- 4 disjoint role pills -->
+              <rect x="58" y="414" width="136" height="26" rx="3" fill="#2c313a" stroke="#505866" stroke-width="1"/>
+              <text x="126" y="431" text-anchor="middle" font-family="'Courier New', monospace" font-size="10.5" font-weight="700" fill="#f2ebdd">openmettle_api</text>
+
+              <rect x="204" y="414" width="166" height="26" rx="3" fill="#2c313a" stroke="#e7473c" stroke-width="1"/>
+              <text x="287" y="431" text-anchor="middle" font-family="'Courier New', monospace" font-size="10.5" font-weight="700" fill="#f26b61">openmettle_issuance</text>
+
+              <rect x="380" y="414" width="154" height="26" rx="3" fill="#2c313a" stroke="#505866" stroke-width="1"/>
+              <text x="457" y="431" text-anchor="middle" font-family="'Courier New', monospace" font-size="10.5" font-weight="700" fill="#f2ebdd">openmettle_worker</text>
+
+              <rect x="544" y="414" width="180" height="26" rx="3" fill="#2c313a" stroke="#e7473c" stroke-width="1"/>
+              <text x="634" y="431" text-anchor="middle" font-family="'Courier New', monospace" font-size="10.5" font-weight="700" fill="#f26b61">openmettle_gateway (fn)</text>
+
+              <!-- Artifact FS box -->
+              <rect x="758" y="358" width="320" height="96" rx="4" fill="#21252b" stroke="#e7473c" stroke-width="1.3" stroke-dasharray="5 3"/>
+              <text x="774" y="380" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="900" fill="#f2ebdd">Descriptor-Pinned artifact_fs</text>
+              <text x="774" y="399" font-family="Arial, Helvetica, sans-serif" font-size="11.5" fill="#c4beb2">rustix openat / O_NOFOLLOW / linkat (RWX)</text>
+              <text x="774" y="416" font-family="Arial, Helvetica, sans-serif" font-size="11.5" fill="#c4beb2">Volume sentinels · 4-state &amp; 3-stage cleaners</text>
+              <text x="774" y="438" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#f26b61">+ STAGE 3 RAG &amp; GRAPHITI / HELIXDB SCOPES</text>
+            </g>
+
+            <!-- Connectors 03 -> 04 -->
+            <g>
+              <line x1="204" y1="470" x2="204" y2="508" stroke="#24272c" stroke-width="1.6" marker-start="url(#arch-arrow-ink)" marker-end="url(#arch-arrow-ink)"/>
+              <rect x="78" y="478" width="252" height="20" rx="3" fill="#f8f4ea" stroke="#c9c2b5" stroke-width="1"/>
+              <text x="204" y="492" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#24272c">Fenced Leases &amp; Round Handoff</text>
+
+              <line x1="560" y1="470" x2="560" y2="508" stroke="#bd332a" stroke-width="1.6" marker-start="url(#arch-arrow-red)" marker-end="url(#arch-arrow-red)"/>
+              <rect x="424" y="478" width="272" height="20" rx="3" fill="#f8f4ea" stroke="#bd332a" stroke-width="1"/>
+              <text x="560" y="492" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#bd332a">Two-Phase Intents &amp; Approvals</text>
+
+              <line x1="918" y1="470" x2="918" y2="508" stroke="#24272c" stroke-width="1.6" marker-start="url(#arch-arrow-ink)" marker-end="url(#arch-arrow-ink)"/>
+              <rect x="776" y="478" width="284" height="20" rx="3" fill="#f8f4ea" stroke="#c9c2b5" stroke-width="1"/>
+              <text x="918" y="492" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#24272c">16 KiB Spill Publish &amp; read_range</text>
+            </g>
+
+            <!-- PLANE 04: FENCED EXECUTION & SCOPED TOOLS -->
+            <g>
+              <rect x="24" y="510" width="1072" height="116" rx="5" fill="#f2ebdd" stroke="#24272c" stroke-width="1.5"/>
+              <text x="42" y="532" font-family="'Courier New', monospace" font-size="11" font-weight="700" letter-spacing="1.2" fill="#24272c">04 / FENCED EXECUTION &amp; SCOPED TOOLS · OPENMETTLE-WORKER</text>
+
+              <rect x="42" y="544" width="328" height="68" rx="4" fill="#f8f4ea" stroke="#24272c" stroke-width="1.2"/>
+              <text x="58" y="566" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="900" fill="#24272c">Leased Turn Runner</text>
+              <text x="58" y="584" font-family="Arial, Helvetica, sans-serif" font-size="11.5" fill="#54524a">Step authz recheck · Single-use 32B bearer</text>
+              <text x="58" y="601" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#bd332a">CHECKPOINTS 02 &amp; 03 · ADR 0033 / 0044</text>
+
+              <rect x="396" y="544" width="328" height="68" rx="4" fill="#f8f4ea" stroke="#bd332a" stroke-width="1.4"/>
+              <text x="412" y="566" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="900" fill="#24272c">Two-Phase Effect Ledger</text>
+              <text x="412" y="584" font-family="Arial, Helvetica, sans-serif" font-size="11.5" fill="#54524a">SHA-256 human &amp; YOLO gates · No blind retry</text>
+              <text x="412" y="601" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#bd332a">ADR 0035 · STICKY OUTCOME_UNKNOWN</text>
+
+              <rect x="750" y="544" width="328" height="68" rx="4" fill="#f8f4ea" stroke="#24272c" stroke-width="1.2"/>
+              <text x="766" y="566" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="900" fill="#24272c">Stateless MCP 2026-07-28</text>
+              <text x="766" y="584" font-family="Arial, Helvetica, sans-serif" font-size="11.5" fill="#54524a">DNS/SSRF TLS transport · 16 KiB inline cap</text>
+              <text x="766" y="601" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#bd332a">ADR 0039 · AUTO-SPILL &amp; REDACTION</text>
+            </g>
+
+            <!-- Connectors 04 -> 05 -->
+            <g>
+              <line x1="168" y1="626" x2="168" y2="664" stroke="#bd332a" stroke-width="1.7" marker-end="url(#arch-arrow-red)"/>
+              <rect x="52" y="634" width="232" height="20" rx="3" fill="#f8f4ea" stroke="#bd332a" stroke-width="1"/>
+              <text x="168" y="648" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#bd332a">Single-Use Round Bearer</text>
+
+              <line x1="726" y1="626" x2="726" y2="664" stroke="#24272c" stroke-width="1.6" marker-start="url(#arch-arrow-ink)" marker-end="url(#arch-arrow-ink)"/>
+              <rect x="596" y="634" width="260" height="20" rx="3" fill="#f8f4ea" stroke="#c9c2b5" stroke-width="1"/>
+              <text x="726" y="648" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#24272c">Fenced Capacity Grants (ADR 0042)</text>
+
+              <line x1="974" y1="626" x2="974" y2="664" stroke="#24272c" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#arch-arrow-ink)"/>
+              <rect x="876" y="634" width="196" height="20" rx="3" fill="#f8f4ea" stroke="#c9c2b5" stroke-width="1"/>
+              <text x="974" y="648" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#24272c">TLS / SSRF Egress Guard</text>
+            </g>
+
+            <!-- PLANE 05: INFERENCE & GPU PLANE -->
+            <g>
+              <rect x="24" y="666" width="1072" height="122" rx="5" fill="#ebe2d0" stroke="#24272c" stroke-width="1.5"/>
+              <text x="42" y="688" font-family="'Courier New', monospace" font-size="11" font-weight="700" letter-spacing="1.2" fill="#24272c">05 / INFERENCE &amp; GPU PLANE · OPENMETTLE-GATEWAY · CURATED AMD SERVING · OPTIONAL BACKENDS</text>
+
+              <!-- 5A: openmettle-gateway -->
+              <rect x="42" y="700" width="250" height="74" rx="4" fill="#191c21" stroke="#191c21" stroke-width="1.2"/>
+              <text x="56" y="721" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="900" fill="#f2ebdd">openmettle-gateway</text>
+              <text x="56" y="738" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#c4beb2">Per-model proxy · Strips SGLang keys</text>
+              <text x="56" y="753" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#c4beb2">Injects cache_salt · Settles to PG18</text>
+              <text x="56" y="767" font-family="'Courier New', monospace" font-size="9.5" font-weight="700" fill="#f26b61">CHECKPOINT 04 · FN-ONLY ROLE</text>
+
+              <!-- Arrow 5A -> 5B -->
+              <line x1="292" y1="737" x2="316" y2="737" stroke="#bd332a" stroke-width="1.8" marker-end="url(#arch-arrow-red)"/>
+
+              <!-- 5B: Curated AMD SGLang -->
+              <rect x="320" y="700" width="268" height="74" rx="4" fill="#f8f4ea" stroke="#bd332a" stroke-width="1.5"/>
+              <text x="334" y="721" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="900" fill="#24272c">Curated AMD SGLang</text>
+              <text x="334" y="738" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#54524a">ROCm / RDNA4 (OpenMettle/sglang)</text>
+              <text x="334" y="753" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#54524a">Protected KV Base + Elastic HIP Tail</text>
+              <text x="334" y="767" font-family="'Courier New', monospace" font-size="9.5" font-weight="700" fill="#bd332a">SCOPED CACHE_SALT · NVIDIA PLANNED</text>
+
+              <!-- Arrow 5C <-> 5B -->
+              <line x1="590" y1="737" x2="614" y2="737" stroke="#24272c" stroke-width="1.6" marker-start="url(#arch-arrow-ink)" marker-end="url(#arch-arrow-ink)"/>
+
+              <!-- 5C: GPU Capacity Controller & Burst Media -->
+              <rect x="618" y="700" width="234" height="74" rx="4" fill="#f8f4ea" stroke="#24272c" stroke-width="1.2" stroke-dasharray="5 3"/>
+              <text x="632" y="721" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="900" fill="#24272c">GPU Controller &amp; Burst</text>
+              <text x="632" y="738" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#54524a">ADR 0042 grants · Kubernetes DRA</text>
+              <text x="632" y="753" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#54524a">Image, video &amp; accelerated jobs</text>
+              <text x="632" y="767" font-family="'Courier New', monospace" font-size="9.5" font-weight="700" fill="#bd332a">V1-18 · V1-20 · V1-21</text>
+
+              <!-- 5D: Optional External Backends -->
+              <rect x="868" y="700" width="210" height="74" rx="4" fill="#f8f4ea" stroke="#54524a" stroke-width="1.2" stroke-dasharray="5 3"/>
+              <text x="882" y="721" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="900" fill="#24272c">External Backends</text>
+              <text x="882" y="738" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#54524a">Optional OpenAI-compat APIs</text>
+              <text x="882" y="753" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#54524a">&amp; curated remote MCP tools</text>
+              <text x="882" y="767" font-family="'Courier New', monospace" font-size="9.5" font-weight="700" fill="#54524a">V1-28 ENCRYPTED SECRETS</text>
+            </g>
+          </svg>
+
+          <!-- Crisp mobile-native blueprint view for small screens -->
+          <div class="arch-mobile-stack">
+            <div class="arch-plane">
+              <span class="plane-tag">01 / CLIENT SURFACES</span>
+              <strong>Web, Mobile &amp; IDE Clients</strong>
+              <p>Flutter web and mobile app (<code>openmettle-app</code>, Step 2), JetBrains and CLI coding agent (<code>openmettle-acp</code>), and replayable HMAC-signed SSE streams over OpenAPI 3.2 <code>/v1</code>.</p>
+            </div>
+            <div class="arch-flow-chip" aria-hidden="true"><svg viewBox="0 0 16 20" width="14" height="18"><path d="M8 1v16M3 12l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg> HTTPS /v1 · OIDC PKCE · Signed SSE Cursors</div>
+            <div class="arch-plane plane-accent">
+              <span class="plane-tag">02 / CONTROL &amp; IDENTITY BOUNDARY</span>
+              <strong><code>openmettle-api</code> &amp; <code>openmettle_issuance</code></strong>
+              <p>Primary authorization with <code>404</code> concealment, branch admission, and pre-round quota holds isolated from the dedicated OIDC/Keycloak session issuer and one-time home invite flow.</p>
+            </div>
+            <div class="arch-flow-chip" aria-hidden="true"><svg viewBox="0 0 16 20" width="14" height="18"><path d="M8 1v16M3 12l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg> Primary Transactions · Streaming Multipart</div>
+            <div class="arch-plane plane-dark">
+              <span class="plane-tag">03 / AUTHORITATIVE STATE &amp; STORAGE</span>
+              <strong>PostgreSQL 18 + Descriptor-Pinned <code>artifact_fs</code></strong>
+              <p>Four disjoint non-DDL, non-<code>DELETE</code> runtime roles, <code>SKIP LOCKED</code> fair queue, immutable branch graphs, transactional quotas, hash-chained <code>deletion_journal</code>, and <code>rustix</code> <code>openat</code>/<code>O_NOFOLLOW</code> <code>ReadWriteMany</code> artifact storage.</p>
+            </div>
+            <div class="arch-flow-chip" aria-hidden="true"><svg viewBox="0 0 16 20" width="14" height="18"><path d="M8 1v16M3 12l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg> Fenced Leases · Two-Phase Intents · 16 KiB Spill</div>
+            <div class="arch-plane">
+              <span class="plane-tag">04 / FENCED EXECUTION &amp; SCOPED TOOLS</span>
+              <strong><code>openmettle-worker</code> &amp; Stateless MCP <code>2026-07-28</code></strong>
+              <p>Leased turn runner with per-step authority rechecks, SHA-256 human and YOLO effect gates, sticky <code>outcome_unknown</code> recovery, DNS/SSRF TLS-only MCP transport, and auto-spill with paginated <code>artifact.read_range</code>.</p>
+            </div>
+            <div class="arch-flow-chip" aria-hidden="true"><svg viewBox="0 0 16 20" width="14" height="18"><path d="M8 1v16M3 12l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg> Single-Use 32B Bearer · ADR 0042 Grants</div>
+            <div class="arch-plane plane-warm">
+              <span class="plane-tag">05 / INFERENCE &amp; GPU PLANE</span>
+              <strong><code>openmettle-gateway</code>, AMD SGLang &amp; Optional Backends</strong>
+              <p>Per-model proxy injects scoped <code>cache_salt</code> and settles usage into PostgreSQL 18, feeding curated ROCm/RDNA4 SGLang (Protected KV Base + Elastic HIP Tail), fenced GPU burst media jobs, and optional encrypted external providers.</p>
+            </div>
+          </div>
+
+          <figcaption class="role-strip" aria-label="Four disjoint PostgreSQL 18 runtime roles">
+            <div><span class="role-pill">openmettle_api</span><p>Admits runs, serves <code>/v1</code> reads, records human approvals, and enforces <code>404</code> concealment. Cannot issue sessions or run worker transitions.</p></div>
+            <div><span class="role-pill role-pill-red">openmettle_issuance</span><p>Dedicated OIDC and home-invite session issuer inside <code>openmettle-api</code>. Isolated from conversations, approvals, and inference tables.</p></div>
+            <div><span class="role-pill">openmettle_worker</span><p>Claims leased runs, commits two-phase tool intents, hands off inference rounds, and executes volume-pinned staging and purge cleaners.</p></div>
+            <div><span class="role-pill role-pill-red">openmettle_gateway</span><p>Function-only database boundary since migration 37: zero direct table grants; executes only dispatch verification and usage settlement.</p></div>
+          </figcaption>
+        </figure>
+      </section>
+
       <section id="security" class="section security-band" aria-labelledby="security-heading">
         <div class="section-head">
-          <p class="eyebrow"><span aria-hidden="true"></span> 02 / SECURITY, PRIVACY &amp; GOVERNANCE</p>
+          <p class="eyebrow"><span aria-hidden="true"></span> 03 / SECURITY, PRIVACY &amp; GOVERNANCE</p>
           <h2 id="security-heading">Shared hardware shouldn’t mean shared secrets.</h2>
-          <p class="section-lead">Running a model locally is only half the story. OpenMettle engineers multi-user isolation across the database, the identity boundary, the run queue, and the inference proxy itself.</p>
+          <p class="section-lead">Running a model locally is only half the story. OpenMettle enforces multi-user isolation, four-point policy gates, and two-phase tool accountability across the database, identity boundary, run worker, and inference proxy.</p>
         </div>
+
+        <figure class="pipeline-frame" aria-labelledby="pipeline-title">
+          <div class="pipeline-bar">
+            <span id="pipeline-title" class="blueprint-fig">FIG 02 · LIVE TURN GOVERNANCE &amp; TWO-PHASE TOOL PIPELINE</span>
+            <span class="pipeline-sub">FOUR INDEPENDENT CHECKPOINTS (ADR 0044) · TWO-PHASE EFFECT LEDGER (ADR 0035 &amp; 0039)</span>
+          </div>
+
+          <div class="pipeline-track-wrap">
+            <p class="track-label">TRACK A · FOUR INDEPENDENT GOVERNANCE CHECKPOINTS (FAIL-CLOSED ON STALE OIDC OR REVOKED GRANTS)</p>
+            <ol class="pipeline-steps">
+              <li class="pipeline-node">
+                <span class="step-badge">01 · API ADMISSION</span>
+                <strong>Quota Hold &amp; Preview</strong>
+                <p>Verifies primary grants, family/study schedules, and reserves worst-case token and micro-cost holds atomically with queued admission.</p>
+                <span class="step-meta">openmettle_api · ADR 0032 / 0040</span>
+              </li>
+              <li class="pipeline-arrow" aria-hidden="true"><svg viewBox="0 0 28 20" width="24" height="18"><path d="M2 10h21M17 4l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></li>
+              <li class="pipeline-node node-highlight">
+                <span class="step-badge">02 · WORKER CLAIM</span>
+                <strong>Fenced Lease &amp; Recheck</strong>
+                <p>Claims one fair <code>SKIP LOCKED</code> run, revalidates live grants and family rules before every model or tool step, and forks into Track B for tools.</p>
+                <span class="step-meta">openmettle_worker · ADR 0033</span>
+              </li>
+              <li class="pipeline-arrow" aria-hidden="true"><svg viewBox="0 0 28 20" width="24" height="18"><path d="M2 10h21M17 4l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></li>
+              <li class="pipeline-node">
+                <span class="step-badge">03 · ROUND HANDOFF</span>
+                <strong>Single-Use Bearer Hash</strong>
+                <p>Reconfirms live authority in PostgreSQL, pins profile pricing, and stores only the SHA-256 digest of a fresh 32-byte round bearer.</p>
+                <span class="step-meta">gateway_handoff_round · ADR 0044</span>
+              </li>
+              <li class="pipeline-arrow" aria-hidden="true"><svg viewBox="0 0 28 20" width="24" height="18"><path d="M2 10h21M17 4l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></li>
+              <li class="pipeline-node">
+                <span class="step-badge">04 · PROXY DISPATCH</span>
+                <strong><code>cache_salt</code> &amp; Settlement</strong>
+                <p>Spends bearer once, strips caller SGLang keys, injects scoped <code>cache_salt</code>, streams upstream, and settles exact measured usage.</p>
+                <span class="step-meta">openmettle_gateway · fn-only</span>
+              </li>
+            </ol>
+          </div>
+
+          <div class="pipeline-branch" aria-hidden="true">
+            <svg viewBox="0 0 36 28" width="32" height="24"><path d="M18 0v22M11 16l7 7 7-7" fill="none" stroke="#f26b61" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>WHEN A LEASED WORKER STEP PROPOSES A SCOPED TOOL OR MCP 2026-07-28 CALL</span>
+          </div>
+
+          <div class="pipeline-track-wrap track-b">
+            <p class="track-label">TRACK B · TWO-PHASE SCOPED TOOL &amp; MCP LOOP (ZERO BLIND RETRY OF UNCERTAIN WRITES)</p>
+            <ol class="pipeline-steps">
+              <li class="pipeline-node">
+                <span class="step-badge">T-01 · DURABLE INTENT</span>
+                <strong>Commit Before Send</strong>
+                <p>Validates closed JSON schema and pinned destination, committing <code>outcome = 'intent'</code> (<code>dispatched_attempts = 0</code>) before any bytes leave.</p>
+                <span class="step-meta">PostgreSQL intent · ADR 0039</span>
+              </li>
+              <li class="pipeline-arrow" aria-hidden="true"><svg viewBox="0 0 28 20" width="24" height="18"><path d="M2 10h21M17 4l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></li>
+              <li class="pipeline-node">
+                <span class="step-badge">T-02 · AUTHORITY GATE</span>
+                <strong>Human or Policy Gate</strong>
+                <p>Parks for SHA-256-bound human approval (pinned to arguments and destination) or verifies opt-in YOLO against immutable prohibitions.</p>
+                <span class="step-meta">run_approvals · ADR 0035</span>
+              </li>
+              <li class="pipeline-arrow" aria-hidden="true"><svg viewBox="0 0 28 20" width="24" height="18"><path d="M2 10h21M17 4l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></li>
+              <li class="pipeline-node">
+                <span class="step-badge">T-03 · FENCED ATTEMPT</span>
+                <strong>Sticky Send-Uncertainty</strong>
+                <p>Increments fenced attempt counter under live authz before TLS/SSRF-pinned send. Ambiguous writes stay <code>outcome_unknown</code> for read-only reconciliation.</p>
+                <span class="step-meta">0 to 3 attempts · No blind resend</span>
+              </li>
+              <li class="pipeline-arrow" aria-hidden="true"><svg viewBox="0 0 28 20" width="24" height="18"><path d="M2 10h21M17 4l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></li>
+              <li class="pipeline-node">
+                <span class="step-badge">T-04 · BOUNDED OUTPUT</span>
+                <strong>Inline or Spill Artifact</strong>
+                <p>Caps inline context at <code>16 KiB</code> (<code>200</code> lines), spills larger outputs to <code>artifact_fs</code> for <code>artifact.read_range</code>, and redacts downstream handles.</p>
+                <span class="step-meta">16 KiB cap · Redacted errors</span>
+              </li>
+            </ol>
+          </div>
+        </figure>
 
         <div class="security-grid">
           <article class="security-card">
@@ -130,18 +476,18 @@
               <span class="adr-tag">ADR 0027 · ADR 0044</span>
             </div>
             <h3>Per-User Chat Lockdown &amp; Prefix-Cache Isolation</h3>
-            <p>Every conversation, artifact, and memory record is private to its creator by default — even inside shared projects, and even account administrators gain no implicit access to another person’s unshared items. Explicit sharing uses revocable grants, returning <code>404</code> concealment for unshared or out-of-scope targets.</p>
-            <p>At dispatch, OpenMettle’s own inference proxy rejects caller-supplied SGLang routing keys (<code>cache_salt</code>, <code>extra_key</code>, <code>session_id</code>, <code>rid</code>, <code>lora_path</code>) and injects a scoped cryptographic <code>cache_salt</code> so upstream KV prefix caches do not bleed across users or private chats on qualified backends.</p>
+            <p>Every conversation, artifact, and memory record stays private to its creator by default, even inside shared projects; account administrators gain no implicit access to unshared items. Explicit sharing uses revocable grants with <code>404</code> concealment for hidden or out-of-scope targets.</p>
+            <p>At dispatch, <code>openmettle-gateway</code> rejects caller-supplied SGLang routing keys (<code>cache_salt</code>, <code>extra_key</code>, <code>session_id</code>, <code>rid</code>, <code>lora_path</code>) and injects a scoped cryptographic <code>cache_salt</code> (or <code>per_request</code> nonce mode) so KV prefix caches never bleed across users or private chats on qualified backends.</p>
           </article>
 
           <article class="security-card">
             <div class="card-meta">
               <span class="sec-index">S-02</span>
-              <span class="adr-tag">ADR 0044 · MIGRATION 35</span>
+              <span class="adr-tag">ADR 0044 · MIGRATION 0035</span>
             </div>
             <h3>Four-Point Family &amp; Study Protection Rules</h3>
             <p>IANA timezone- and DST-accurate quiet hours, study-hour model allowlists, and per-user or group model switches are evaluated by one authoritative PostgreSQL policy function, with optional user-level schedule overrides.</p>
-            <p>Rules are enforced independently at four checkpoints — API admission and preview, worker claim and step recheck, database round handoff, and proxy dispatch — failing closed whenever OIDC group evidence is stale, revoked, or missing.</p>
+            <p>Rules run independently at all four checkpoints (API admission and preview, worker claim and step recheck, database round handoff, and proxy dispatch), failing closed whenever OIDC group evidence is stale, revoked, or missing.</p>
           </article>
 
           <article class="security-card">
@@ -150,94 +496,213 @@
               <span class="adr-tag">ADR 0003 · 0022 · 0030 · 0044</span>
             </div>
             <h3>Least-Privilege Database &amp; Identity Isolation</h3>
-            <p>Clean-room Rust services run over PostgreSQL 18 using four disjoint, non-DDL, non-<code>DELETE</code> runtime roles — <code>openmettle_api</code>, dedicated session-issuing <code>openmettle_issuance</code>, <code>openmettle_worker</code>, and <code>openmettle_gateway</code> for dispatch and usage settlement — checked automatically on every migration.</p>
-            <p>OIDC/SSO login uses local operator identity approval gates and one-time home invitation codes, while every inference round carries a single-use 32-byte bearer whose plaintext never touches the database (only its SHA-256 digest is stored and checked).</p>
+            <p>Clean-room Rust services connect to PostgreSQL 18 through four disjoint, non-DDL, non-<code>DELETE</code> runtime roles: <code>openmettle_api</code>, dedicated session-issuing <code>openmettle_issuance</code>, <code>openmettle_worker</code>, and function-only <code>openmettle_gateway</code>, checked automatically on every migration.</p>
+            <p>Standards-based OIDC/SSO (PKCE, nonce, issuer/subject stability) pairs with local operator approval gates and one-time home invitation codes. Every inference round uses a single-use 32-byte bearer whose plaintext never touches PostgreSQL (only its SHA-256 digest is stored and checked).</p>
           </article>
 
           <article class="security-card">
             <div class="card-meta">
               <span class="sec-index">S-04</span>
-              <span class="adr-tag">ADR 0035 · 0040 · 0041 · 0024</span>
+              <span class="adr-tag">ADR 0024 · 0035 · 0040 · 0041</span>
             </div>
-            <h3>Tool Approvals, Quotas &amp; Verifiable Auditability</h3>
-            <p>Human-in-the-loop tool approvals are cryptographically bound (SHA-256) to canonical arguments, tool version, exact destination, and live policy revisions; opt-in YOLO mode stays strictly policy-gated and cannot bypass immutable human confirmation classes.</p>
-            <p>Exact-integer transactional quotas govern tokens, cost micro-units, storage bytes, and device slots. Soft-delete grace periods, operator retention holds, an append-only SHA-256 hash-chained deletion journal with a fail-closed restore barrier, and value-free, PII-free structured telemetry (export off by default) complete the governance model.</p>
+            <h3>Approvals, Pre-Round Quotas &amp; Verifiable Auditability</h3>
+            <p>Human-in-the-loop tool approvals bind cryptographically (SHA-256) to canonical arguments, tool version, exact destination, and live policy revisions; opt-in YOLO mode remains policy-gated and cannot bypass immutable human confirmation classes.</p>
+            <p>Exact-integer (<code>numeric(38, 0)</code>) transactional quotas hold worst-case pre-round token and micro-cost reservations and settle to measured usage from admission-pinned pricing, backed by configurable retention holds, a SHA-256 hash-chained deletion journal, and value-free, PII-free telemetry (OTLP export off by default).</p>
           </article>
         </div>
       </section>
 
       <section id="platform" class="section" aria-labelledby="platform-heading">
         <div class="section-head">
-          <p class="eyebrow"><span aria-hidden="true"></span> 03 / SERVING &amp; PLATFORM ENGINEERING</p>
+          <p class="eyebrow"><span aria-hidden="true"></span> 04 / SERVING &amp; PLATFORM CAPABILITIES</p>
           <h2 id="platform-heading">Cutting-edge inference meets dependable execution.</h2>
-          <p class="section-lead">Fast local GPUs shouldn’t come at the cost of fragile chats or stranded VRAM. OpenMettle pairs AMD-first ROCm serving research with durable, server-owned run orchestration.</p>
+          <p class="section-lead">Fast local GPUs shouldn’t come at the cost of fragile chats, stranded VRAM, or leaky tools. OpenMettle unites AMD-first ROCm serving research with durable execution, traversal-proof storage, scoped tools, and clean multi-client APIs.</p>
         </div>
 
         <article class="serving-feature">
           <div class="serving-copy">
-            <p class="spec-label">AMD-FIRST ROCm &amp; RDNA4 · ADR 0042</p>
+            <p class="spec-label">AMD-FIRST ROCm &amp; RDNA4 · V1-18 · V1-19 · V1-21 · ADR 0042</p>
             <h3>Demand-Driven Elastic KV Cache &amp; Curated SGLang Serving</h3>
-            <p>Our curated SGLang serving stack (<code>OpenMettle/sglang</code>, <code>openmettle-serving</code>) combines HIP virtual-memory <strong>Elastic KV Cache</strong>, FP8 attention caching, MXFP4 quantization, and speculative decoding research tuned for AMD GPUs first.</p>
-            <p>Active chats stay protected inside a physically backed base while spare VRAM is lent to a dynamically mapped prefix-cache tail. When image, video, or accelerated tool workloads arrive, a fenced PostgreSQL capacity controller requests a safe shrink and waits for confirmed multi-rank VRAM release before granting the GPU.</p>
-            <p class="serving-footnote"><strong>GPU-independent core:</strong> <code>openmettle-core</code> runs on CPU alone, integrates optional GPU packages through Kubernetes DRA, plans qualified NVIDIA profiles, and connects cleanly to user-configured external OpenAI-compatible backends.</p>
+            <p>Our curated SGLang serving stack (<code>OpenMettle/sglang</code>, <code>openmettle-serving</code>) pairs HIP virtual-memory <strong>Elastic KV Cache</strong> with FP8 attention caching, MXFP4 quantization, and speculative decoding research tuned for AMD GPUs first.</p>
+            <p>Active chats stay protected inside a physically backed base on every rank while spare VRAM feeds a reclaimable prefix-cache tail. When burst image, video, or accelerated tool jobs arrive, an epoch-fenced PostgreSQL GPU capacity controller requests a safe shrink and waits for confirmed multi-rank release before committing the grant.</p>
+            <p class="serving-footnote"><strong>GPU-independent core:</strong> <code>openmettle-core</code> deploys on CPU alone, integrates optional GPU packages through Kubernetes DRA (<code>V1-20</code>), plans qualified NVIDIA profiles, and connects cleanly to user-configured external OpenAI-compatible backends.</p>
           </div>
 
-          <aside class="diagram" aria-label="Logical Elastic KV Cache and GPU capacity coordination model">
-            <p class="diagram-title">LOGICAL VRAM COORDINATION · PER-RANK BUDGETED</p>
-            <div class="diagram-stack">
-              <div class="diagram-node node-base">
-                <span class="node-tag">PROTECTED FLOOR</span>
-                <strong>Active Chat KV Base</strong>
-                <span>Physically backed; active sessions stay bounded inside the guaranteed base.</span>
-              </div>
-              <div class="diagram-node node-tail">
-                <span class="node-tag">ELASTIC HIP VIRTUAL MEMORY</span>
-                <strong>Reclaimable KV Prefix Tail</strong>
-                <span>Borrows spare VRAM for deep prefix reuse; shrinks and confirms release on demand.</span>
-              </div>
-              <div class="diagram-connector" aria-hidden="true"><span>FENCED POSTGRESQL CAPACITY GRANTS · ADR 0042</span></div>
-              <div class="diagram-row">
-                <div class="diagram-node node-compact">
-                  <span class="node-tag">OWNERSHIP</span>
-                  <strong>GPU Controller</strong>
-                  <span>Serialized leases, per-rank fit checks, restart reconciliation.</span>
-                </div>
-                <div class="diagram-node node-compact">
-                  <span class="node-tag">BURST WORKLOADS</span>
-                  <strong>Media &amp; Tools</strong>
-                  <span>Image, video, and accelerated jobs admitted only after confirmed release.</span>
-                </div>
-              </div>
-            </div>
-          </aside>
+          <figure class="diagram" aria-labelledby="vram-diagram-title">
+            <p id="vram-diagram-title" class="diagram-title">FIG 03 · MULTI-RANK VRAM COORDINATION · PER-RANK BUDGETED</p>
+
+            <svg class="vram-svg" viewBox="0 0 560 416" width="560" height="416" role="img" aria-labelledby="vram-svg-title vram-svg-desc">
+              <title id="vram-svg-title">Multi-rank Elastic KV Cache and fenced GPU capacity coordination diagram</title>
+              <desc id="vram-svg-desc">Proportional two-rank GPU VRAM diagram comparing interactive chat mode against burst media admission. On both Rank 0 and Rank 1, model weights and the Protected Active Chat KV Base occupy fixed guaranteed budgets that never shrink. In State A, spare VRAM holds the Elastic HIP KV Prefix Tail. Through the epoch-fenced PostgreSQL GPU Controller (ADR 0042), a shrink request triggers confirmed multi-rank VRAM release before committing a grant in State B for Burst Media and Tools while active chats continue uninterrupted inside the base.</desc>
+              <defs>
+                <pattern id="vram-hatch-red" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                  <rect width="8" height="8" fill="#bd332a"/>
+                  <line x1="0" y1="0" x2="0" y2="8" stroke="#d44b41" stroke-width="2.2"/>
+                </pattern>
+                <marker id="vram-arrow-red" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+                  <path d="M 0 1 L 9 5 L 0 9 z" fill="#bd332a"/>
+                </marker>
+                <marker id="vram-arrow-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+                  <path d="M 0 1 L 9 5 L 0 9 z" fill="#24272c"/>
+                </marker>
+              </defs>
+
+              <rect x="0" y="0" width="560" height="416" rx="4" fill="#f8f4ea"/>
+
+              <!-- Vertical alignment guide for Protected Floor -->
+              <line x1="336" y1="30" x2="336" y2="386" stroke="#c9c2b5" stroke-width="1" stroke-dasharray="3 3"/>
+              <text x="336" y="21" text-anchor="middle" font-family="'Courier New', monospace" font-size="9.5" font-weight="700" fill="#54524a">PROTECTED CHAT FLOOR</text>
+
+              <!-- STATE A: INTERACTIVE CHAT & ELASTIC PREFIX REUSE -->
+              <text x="16" y="42" font-family="'Courier New', monospace" font-size="10.5" font-weight="700" fill="#24272c">STATE A · INTERACTIVE CHAT + ELASTIC PREFIX REUSE</text>
+
+              <!-- Rank 0 State A -->
+              <text x="16" y="72" font-family="'Courier New', monospace" font-size="10.5" font-weight="700" fill="#54524a">RANK 0</text>
+              <rect x="82" y="50" width="114" height="34" rx="2" fill="#24272c"/>
+              <text x="139" y="71" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" fill="#f2ebdd">Weights</text>
+              <rect x="198" y="50" width="138" height="34" rx="2" fill="#3a3f49"/>
+              <text x="267" y="71" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" fill="#f2ebdd">Protected KV Base</text>
+              <rect x="338" y="50" width="160" height="34" rx="2" fill="url(#vram-hatch-red)" stroke="#24272c" stroke-width="1" stroke-dasharray="4 2"/>
+              <text x="418" y="71" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" fill="#fff9ed">Elastic HIP KV Tail</text>
+              <rect x="500" y="50" width="44" height="34" rx="2" fill="#ebe2d0" stroke="#b5ac9c" stroke-width="1"/>
+              <text x="522" y="71" text-anchor="middle" font-family="'Courier New', monospace" font-size="9.5" font-weight="700" fill="#54524a">SAFE</text>
+
+              <!-- Rank 1 State A -->
+              <text x="16" y="114" font-family="'Courier New', monospace" font-size="10.5" font-weight="700" fill="#54524a">RANK 1</text>
+              <rect x="82" y="92" width="114" height="34" rx="2" fill="#24272c"/>
+              <text x="139" y="113" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" fill="#f2ebdd">Weights</text>
+              <rect x="198" y="92" width="138" height="34" rx="2" fill="#3a3f49"/>
+              <text x="267" y="113" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" fill="#f2ebdd">Protected KV Base</text>
+              <rect x="338" y="92" width="160" height="34" rx="2" fill="url(#vram-hatch-red)" stroke="#24272c" stroke-width="1" stroke-dasharray="4 2"/>
+              <text x="418" y="113" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" fill="#fff9ed">Elastic HIP KV Tail</text>
+              <rect x="500" y="92" width="44" height="34" rx="2" fill="#ebe2d0" stroke="#b5ac9c" stroke-width="1"/>
+              <text x="522" y="113" text-anchor="middle" font-family="'Courier New', monospace" font-size="9.5" font-weight="700" fill="#54524a">SAFE</text>
+
+              <!-- MIDDLE: SHRINK -> CONFIRM -> GRANT HANDOFF -->
+              <!-- Step 1: Request Shrink (Controller -> Tail) -->
+              <path d="M 380 174 L 380 132" fill="none" stroke="#bd332a" stroke-width="1.8" marker-end="url(#vram-arrow-red)"/>
+              <rect x="290" y="142" width="84" height="19" rx="2" fill="#f8f4ea" stroke="#bd332a" stroke-width="1"/>
+              <text x="332" y="155" text-anchor="middle" font-family="'Courier New', monospace" font-size="9.5" font-weight="700" fill="#bd332a">1. SHRINK</text>
+
+              <!-- Step 2: Confirm Release (Tail -> Controller) -->
+              <path d="M 450 128 L 450 170" fill="none" stroke="#24272c" stroke-width="1.8" marker-end="url(#vram-arrow-ink)"/>
+              <rect x="458" y="142" width="86" height="19" rx="2" fill="#f8f4ea" stroke="#24272c" stroke-width="1"/>
+              <text x="501" y="155" text-anchor="middle" font-family="'Courier New', monospace" font-size="9.5" font-weight="700" fill="#24272c">2. CONFIRM</text>
+
+              <!-- Controller Box -->
+              <rect x="82" y="174" width="462" height="58" rx="4" fill="#191c21" stroke="#e7473c" stroke-width="1.4"/>
+              <text x="100" y="195" font-family="'Courier New', monospace" font-size="10.5" font-weight="700" fill="#f26b61">EPOCH-FENCED POSTGRESQL GPU CONTROLLER · ADR 0042</text>
+              <text x="100" y="215" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#f2ebdd">Serializes per-rank fit checks, waits for all-rank release, reconciles restarts.</text>
+
+              <!-- Step 3: Commit Grant (Controller -> Burst State B) -->
+              <path d="M 418 232 L 418 294" fill="none" stroke="#bd332a" stroke-width="2" marker-end="url(#vram-arrow-red)"/>
+              <rect x="334" y="246" width="168" height="21" rx="2" fill="#bd332a"/>
+              <text x="418" y="260" text-anchor="middle" font-family="'Courier New', monospace" font-size="9.5" font-weight="700" fill="#fff9ed">3. COMMIT GRANT &amp; ADMIT</text>
+
+              <!-- STATE B: BURST MEDIA / TOOLS ADMITTED -->
+              <text x="16" y="286" font-family="'Courier New', monospace" font-size="10.5" font-weight="700" fill="#24272c">STATE B · BURST ADMISSION (BASE UNTOUCHED)</text>
+
+              <!-- Rank 0 State B -->
+              <text x="16" y="320" font-family="'Courier New', monospace" font-size="10.5" font-weight="700" fill="#54524a">RANK 0</text>
+              <rect x="82" y="298" width="114" height="34" rx="2" fill="#24272c"/>
+              <text x="139" y="319" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" fill="#f2ebdd">Weights</text>
+              <rect x="198" y="298" width="138" height="34" rx="2" fill="#3a3f49"/>
+              <text x="267" y="319" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" fill="#f2ebdd">Protected KV Base</text>
+              <rect x="338" y="298" width="160" height="34" rx="2" fill="#f2ebdd" stroke="#bd332a" stroke-width="1.8"/>
+              <text x="418" y="319" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="900" fill="#bd332a">Burst Media / Tools</text>
+              <rect x="500" y="298" width="44" height="34" rx="2" fill="#ebe2d0" stroke="#b5ac9c" stroke-width="1"/>
+              <text x="522" y="319" text-anchor="middle" font-family="'Courier New', monospace" font-size="9.5" font-weight="700" fill="#54524a">SAFE</text>
+
+              <!-- Rank 1 State B -->
+              <text x="16" y="362" font-family="'Courier New', monospace" font-size="10.5" font-weight="700" fill="#54524a">RANK 1</text>
+              <rect x="82" y="340" width="114" height="34" rx="2" fill="#24272c"/>
+              <text x="139" y="361" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" fill="#f2ebdd">Weights</text>
+              <rect x="198" y="340" width="138" height="34" rx="2" fill="#3a3f49"/>
+              <text x="267" y="361" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" fill="#f2ebdd">Protected KV Base</text>
+              <rect x="338" y="340" width="160" height="34" rx="2" fill="#f2ebdd" stroke="#24272c" stroke-width="1.3" stroke-dasharray="4 3"/>
+              <text x="418" y="361" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" fill="#24272c">Confirmed Free / Burst</text>
+              <rect x="500" y="340" width="44" height="34" rx="2" fill="#ebe2d0" stroke="#b5ac9c" stroke-width="1"/>
+              <text x="522" y="361" text-anchor="middle" font-family="'Courier New', monospace" font-size="9.5" font-weight="700" fill="#54524a">SAFE</text>
+
+              <text x="280" y="399" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#54524a">Active chat capacity never shrinks; KV tail regrows only after confirmed burst release.</text>
+            </svg>
+
+            <figcaption class="vram-steps">
+              <span><strong>1. Shrink:</strong> Evict idle tail prefixes; migrate live slots into Base.</span>
+              <span><strong>2. Confirm:</strong> Verify physical unmap across every tensor-parallel rank.</span>
+              <span><strong>3. Grant:</strong> Commit fenced GPU grant before dispatching media or tools.</span>
+            </figcaption>
+          </figure>
         </article>
 
         <div class="platform-grid">
           <article class="platform-card">
-            <span class="adr-tag-light">ADR 0032 · 0033 · 0034</span>
-            <h3>Durable Leased Runs &amp; Replayable SSE</h3>
-            <p>PostgreSQL backs a fair <code>SKIP LOCKED</code> work queue with fenced worker leases, execution deadlines, and crash recovery that never blindly replays uncertain side effects. Runs survive browser or mobile disconnects and resume from any API replica via HMAC-signed SSE event cursors.</p>
+            <div class="card-meta">
+              <span class="adr-tag-light">V1-14 · ADR 0039</span>
+              <span class="cap-index" aria-hidden="true">P-01</span>
+            </div>
+            <h3>Scoped Stateless MCP <code>2026-07-28</code> &amp; Bounded Outputs</h3>
+            <p>Two-phase write intents commit a durable PostgreSQL intent before any outbound bytes leave the worker, increment fenced attempt counters under live authorization, and hold sticky send-uncertainty (<code>outcome_unknown</code>) so destination-authorized reconciliation never blindly repeats an uncertain write.</p>
+            <p>Outbound MCP calls run over SSRF- and DNS-pinned TLS-only transport. Model context stays capped at <code>16 KiB</code> (<code>200</code> lines), automatically spilling larger outputs to scoped artifacts with paginated <code>artifact.read_range</code> reads and downstream handle redaction.</p>
           </article>
 
           <article class="platform-card">
-            <span class="adr-tag-light">ADR 0036</span>
-            <h3>Non-Destructive Branch Graphs</h3>
-            <p>Conversations are stored as parent-linked immutable message graphs. Editing a prompt or retrying a reply forks a new branch without erasing history, paired with layered model-and-preset configuration and explicit, honest context budgets.</p>
+            <div class="card-meta">
+              <span class="adr-tag-light">V1-15 · V1-16 · ADR 0031 · 0040 · 0041</span>
+              <span class="cap-index" aria-hidden="true">P-02</span>
+            </div>
+            <h3>Traversal-Proof Storage, Volume Pinning &amp; Retention</h3>
+            <p>Descriptor-relative <code>openat</code>, <code>O_NOFOLLOW</code>, and <code>linkat</code> filesystem isolation (<code>rustix</code>, zero <code>unsafe</code> code) pairs with role-tagged volume sentinels and inode-verified <code>ReadWriteMany</code> volume adoption (<code>openmettle storage adopt</code> and <code>openmettle-admin storage rebind</code>).</p>
+            <p>Crash-safe 4-state staging/reclaim and 3-stage <code>.purge.&lt;id&gt;</code> cleaners protect in-flight downloads, alongside configurable 30-day soft-delete grace windows, operator retention holds, fail-closed restore barriers, and an append-only SHA-256 hash-chained deletion journal.</p>
           </article>
 
           <article class="platform-card">
-            <span class="adr-tag-light">WEB · MOBILE · CLUSTER · IDE</span>
-            <h3>Coherent Delivery Across Interfaces</h3>
-            <p>Backend APIs and OpenAPI 3.2 contracts lead step 1 ahead of the Flutter web and mobile client in step 2 (<code>openmettle-app</code>). Generic Kubernetes/Helm packaging with deny-all NetworkPolicies lives in <code>openmettle-deploy</code>, alongside our local IDE and CLI coding agent (<code>openmettle-acp</code>).</p>
+            <div class="card-meta">
+              <span class="adr-tag-light">V1-07 · V1-10 TO V1-12 · ADR 0032 TO 0036</span>
+              <span class="cap-index" aria-hidden="true">P-03</span>
+            </div>
+            <h3>Branch Graphs, Layered Presets &amp; Durable Runs</h3>
+            <p>Conversations persist as immutable parent-linked branch graphs where edits and retries fork cleanly without erasing history, backed by a fair <code>SKIP LOCKED</code> PostgreSQL queue, fenced worker leases, and HMAC-signed SSE cursors that resume cleanly from any API replica.</p>
+            <p>Four-layer presets (<code>model -&gt; preset -&gt; project -&gt; request</code>) combine provider-declared reasoning controls, qualified replay pinning, honest measured versus estimated context budgets, and pre-round token and micro-cost reservations settled to exact usage.</p>
+          </article>
+
+          <article class="platform-card">
+            <div class="card-meta">
+              <span class="adr-tag-light">V1-22 TO V1-25 · STAGE 3 · ADR 0036</span>
+              <span class="cap-index" aria-hidden="true">P-04</span>
+            </div>
+            <h3>Scoped Memory, Hybrid Search &amp; Document Grounding</h3>
+            <p>Private personal and project memory scopes (<code>project_only</code> default via Graphiti, targeting permissive Apache-2.0 HelixDB) enforce explicit provenance and temporary-chat opt-out with zero cross-project or cross-user bleed.</p>
+            <p>Planned Stage 3 retrieval combines hybrid dense and lexical (BM25) search, reranking, and bounded Markdown/text chunking with verifiable span citations, provider-neutral web search (<code>Exa</code> and <code>Tavily</code>), bounded deep research, and live read-visibility re-verification on every prompt hydration.</p>
+          </article>
+
+          <article class="platform-card">
+            <div class="card-meta">
+              <span class="adr-tag-light">V1-19 · V1-21 · #64 · ADR 0036 · 0042</span>
+              <span class="cap-index" aria-hidden="true">P-05</span>
+            </div>
+            <h3>Multimodal Vision, Voice &amp; Burst Media Workflows</h3>
+            <p>Branch-pinned image and document attachment revisions supply vision-capable models directly from scoped artifact storage without duplicating base64 payloads in conversation history, rechecking active revision state and permissions on every turn.</p>
+            <p>Curated Stage 3 adapters bring local image and video generation jobs plus launch-scope request-based dictation and spoken replies under fenced GPU capacity grants and confirmed Elastic KV Cache release.</p>
+          </article>
+
+          <article class="platform-card">
+            <div class="card-meta">
+              <span class="adr-tag-light">V1-26 TO V1-35 · ADR 0010 · 0041</span>
+              <span class="cap-index" aria-hidden="true">P-06</span>
+            </div>
+            <h3>Hybrid Providers, Restore Safety &amp; Multi-Client Delivery</h3>
+            <p>Optional user-configured external OpenAI-compatible providers stay guarded by strict TLS/SSRF egress controls and planned envelope-encrypted PostgreSQL secrets (<code>V1-28</code>), alongside planned <code>Agent Sandbox</code> and <code>gVisor</code> coding workspaces (<code>V1-26</code>, <code>V1-27</code>).</p>
+            <p>Coordinated backup and restore drills (<code>V1-30</code>, <code>V1-31</code>) preserve historical receipts, replay the deletion journal, and quarantine in-flight writes (<code>outcome_unknown</code>) without re-authorizing duplicate side effects, while generic Helm charts, Step 2 Flutter (<code>openmettle-app</code>), and <code>openmettle-acp</code> complete delivery.</p>
           </article>
         </div>
       </section>
 
       <section id="stack" class="section" aria-labelledby="stack-heading">
         <div class="section-head">
-          <p class="eyebrow"><span aria-hidden="true"></span> 04 / REPOSITORIES &amp; BUILD STATUS</p>
+          <p class="eyebrow"><span aria-hidden="true"></span> 05 / REPOSITORIES &amp; BUILD STATUS</p>
           <h2 id="stack-heading">Built in the open. Honest about what’s ready.</h2>
-          <p class="section-lead">OpenMettle v1 is a clean-room implementation under active development. Backend APIs, migrations, security boundaries, and serving work are moving fast — while a general installer, packaged gateway chart, live multi-user qualification, and the Flutter UI remain in progress.</p>
+          <p class="section-lead">OpenMettle v1 is a clean-room implementation under active development. Core Rust APIs, PostgreSQL 18 migrations, four-point family rules, <code>openmettle-gateway</code> packaging, and <code>V1-14</code> MCP engineering are landing fast; a general installer, live multi-user SGLang qualification, Stage 3 knowledge/memory/media services, <code>V1-28</code> credential vault, and the Step 2 Flutter client remain in progress.</p>
         </div>
 
         <div class="repo-grid">
@@ -246,15 +711,15 @@
               <span class="repo-name">openmettle-core</span>
               <span class="repo-status">Active v1 build</span>
             </div>
-            <p>Rust API, run worker, PostgreSQL 18 migrator, inference proxy, OpenAPI 3.2 contracts, and ADRs 0001–0044.</p>
+            <p>Rust API, leased worker, PostgreSQL 18 migrator, <code>openmettle-gateway</code> proxy, OpenAPI 3.2 contracts, and ADRs 0001 to 0044.</p>
           </a>
 
           <a class="repo-card" href="https://github.com/OpenMettle/openmettle-deploy">
             <div class="card-meta">
               <span class="repo-name">openmettle-deploy</span>
-              <span class="repo-status">Core chart &amp; kind tests</span>
+              <span class="repo-status">Core &amp; gateway charts</span>
             </div>
-            <p>Generic Kubernetes/Helm packaging, deny-all NetworkPolicies, optional GPU profile boundaries, and recovery docs.</p>
+            <p>Generic Kubernetes/Helm charts for core and per-model gateways, deny-all NetworkPolicies, optional DRA GPU profiles, and restore drills.</p>
           </a>
 
           <a class="repo-card" href="https://github.com/OpenMettle/openmettle-serving">
@@ -262,7 +727,7 @@
               <span class="repo-name">openmettle-serving</span>
               <span class="repo-status">Serving profiles &amp; tools</span>
             </div>
-            <p>Model-independent serving profiles, GPU kernel check tools, research records, and qualification harnesses.</p>
+            <p>Model-independent serving profiles, GPU kernel verification tools, KV security research, and RDNA4 qualification harnesses.</p>
           </a>
 
           <a class="repo-card" href="https://github.com/OpenMettle/sglang">
@@ -270,7 +735,7 @@
               <span class="repo-name">OpenMettle/sglang</span>
               <span class="repo-status">openmettle/rdna4 branch</span>
             </div>
-            <p>Maintained SGLang fork carrying AMD ROCm/RDNA4 fixes, FP8 attention caching, and HIP Elastic KV Cache work.</p>
+            <p>Maintained SGLang fork carrying AMD ROCm/RDNA4 fixes, FP8 attention caching, and HIP virtual-memory Elastic KV Cache patches.</p>
           </a>
 
           <a class="repo-card" href="https://github.com/OpenMettle/openmettle-app">
@@ -278,7 +743,7 @@
               <span class="repo-name">openmettle-app</span>
               <span class="repo-status">Step 2 · Bootstrap</span>
             </div>
-            <p>Flutter web and mobile presentation layer consuming the core v1 APIs and replayable event streams.</p>
+            <p>Flutter web and mobile presentation layer consuming the core <code>/v1</code> APIs, branch history, approvals, and replayable SSE cursors.</p>
           </a>
 
           <a class="repo-card" href="https://github.com/OpenMettle/openmettle-acp">
@@ -286,7 +751,7 @@
               <span class="repo-name">openmettle-acp</span>
               <span class="repo-status">v0.7.0 · v1 adapter planned</span>
             </div>
-            <p>Independent local coding agent for JetBrains IDEs and compatible ACP clients with sandboxed commands and checkpoints.</p>
+            <p>Independent local coding agent for JetBrains IDEs and compatible ACP clients with OS-enforced sandboxing, approvals, and checkpoints.</p>
           </a>
         </div>
       </section>
@@ -296,7 +761,8 @@
       <p>© 2026 OpenMettle <span aria-hidden="true">/</span> Independent open-source project.</p>
       <div class="footer-links">
         <a href="https://github.com/OpenMettle/.github/blob/main/docs/PROJECT-BRIEF.md">Project brief</a>
-        <a href="https://github.com/OpenMettle/openmettle-core/blob/main/DECISIONS.md">ADRs</a>
+        <a href="https://github.com/OpenMettle/openmettle-core/blob/main/ARCHITECTURE-v1.md">Architecture v1</a>
+        <a href="https://github.com/OpenMettle/openmettle-core/blob/main/DECISIONS.md">ADRs 0001 to 0044</a>
         <a href="https://github.com/OpenMettle/.github/blob/main/SECURITY.md">Security</a>
         <a href="https://github.com/OpenMettle">GitHub</a>
       </div>
